@@ -9,7 +9,7 @@ from flasgger import Swagger
 
 app = Flask(__name__)
 swagger = Swagger(app)
-CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
+CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
 # Is defined in api/v1/views
 app.register_blueprint(app_views, url_prefix="/api/v1")
 
