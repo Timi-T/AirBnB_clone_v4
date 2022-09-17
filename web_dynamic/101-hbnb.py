@@ -29,7 +29,7 @@ def teardown(reponse_or_exc):
     storage.close()
 
 
-@app.route('/101-hbnb')
+@app.route('/')
 def hbnb():
     """Flask web application that /hbnb: display a HTML page
         with data from DBstorage"""
